@@ -8,6 +8,7 @@ export default function Header() {
                     "Full Stack Dev @ RBC",
                     "SWE @ PointClickCare",
                     "Software Dev @ Cyclica",
+                    "Online Shopping Enthusiast"
                 ];
     return(
         <div>
@@ -30,9 +31,10 @@ export default function Header() {
             </span>
             <Row>
                 <Col span={2}>
-                    Yellow
+                    <div className="image-template"/>
                 </Col>
                 <Col span={2} className="intro-container">
+                    <span className="border-text">  Thanks for stopping by! </span>
                     <p></p>
                     <p className="greeting name">Hi I'm Cathy</p>
                     <p className="type-it">
@@ -48,6 +50,7 @@ export default function Header() {
                             }}
                         />
                     </p>
+                    <div className="pink-underline"/>
                 </Col>
             </Row>
         </div>

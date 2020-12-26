@@ -46,11 +46,10 @@
     font-family: 'Cormorant Garamond';
     font-size: 40pt;
     width: 35%;
-    height: 300px;
-    margin-top: 100px;
+    height: 250px;
+    margin-top: 175px;
     margin-left: 15px;
     left: 55%;
-    font-family: 'Montserrat';
     position: absolute;
 }
 
@@ -62,4 +61,29 @@
 .type-it {
     font-size: 17.5pt;
     padding-left: 65px;
+}
+
+.pink-underline {
+    width: 250px;
+    height: 7.5px;
+    background-color: #F7E1DE;
+    margin-left: 64px;
+}
+
+.image-template {
+    width: 30%;
+    height: 500px;
+    background-color: #F7E1DE;
+    margin: 100px;
+    float: left;
+}
+
+.border-text {
+    font-size: 12pt;
+    font-family: 'Montserrat';
+    margin-left: 20px;
+    width: 190px;
+    background: white;
+    position: absolute;
+    top: -10px;
 }
