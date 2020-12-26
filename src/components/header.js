@@ -1,0 +1,55 @@
+import './header.css';
+import { GithubOutlined, MailOutlined, LinkedinOutlined, FileOutlined } from '@ant-design/icons';
+import { Row, Col } from 'antd';
+import TypeIt from "typeit-react";
+
+export default function Header() {
+    const lines = ["Biomedical Engineering at UWaterloo",
+                    "Full Stack Dev @ RBC",
+                    "SWE @ PointClickCare",
+                    "Software Dev @ Cyclica",
+                ];
+    return(
+        <div>
+            <div className="header-container">
+                <div className="menu-options">
+                    <span className="options">ABOUT ME</span>
+                    <span className="options">EXPERIENCE</span>
+                    <span className="options">CONTACT</span>
+                </div>
+            </div>
+            <span className="name">
+                Cathy Le
+            </span>
+            <div className="name-underline" />
+            <span>
+                <span> <a href="https://www.google.ca"> <FileOutlined className="links"/> </a></span>
+                <span> <a href="https://www.linkedin.com/in/le-cathy/" target="_blank" rel="noreferrer"> <LinkedinOutlined className="links"/> </a></span>
+                <span> <a href="https://www.github.com/lecathy" target="_blank" rel="noreferrer"> <GithubOutlined className="links"/> </a> </span>
+                <span> <a href="mailto:c29le@uwaterloo.ca" rel="noreferrer"> <MailOutlined className="links"/> </a> </span>
+            </span>
+            <Row>
+                <Col span={2}>
+                    Yellow
+                </Col>
+                <Col span={2} className="intro-container">
+                    <p></p>
+                    <p className="greeting name">Hi I'm Cathy</p>
+                    <p className="type-it">
+                        <TypeIt 
+                            options={{
+                                strings: lines,
+                                speed: 75,
+                                nextStringDelay: 1500,
+                                loopDelay: 50,
+                                loop: true,
+                                waitUntilVisible: true,
+                                breakLines: false,
+                            }}
+                        />
+                    </p>
+                </Col>
+            </Row>
+        </div>
+    );
+}
