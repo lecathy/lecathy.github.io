@@ -50,6 +50,7 @@
     margin-top: 175px;
     margin-left: 15px;
     left: 55%;
+    top: 200px;
     position: absolute;
 }
 
@@ -75,7 +76,7 @@
     height: 500px;
     background-color: #F7E1DE;
     margin: 100px;
-    float: left;
+    display:inline-block
 }
 
 .border-text {

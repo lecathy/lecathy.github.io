@@ -31,7 +31,7 @@ export default function Header() {
             </span>
             <Row>
                 <Col span={2}>
-                    <div className="image-template"/>
+                    <span className="image-template">insert picture here</span>
                 </Col>
                 <Col span={2} className="intro-container">
                     <span className="border-text">  Thanks for stopping by! </span>
