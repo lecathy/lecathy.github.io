@@ -2,6 +2,7 @@ import './header.css';
 import { GithubOutlined, MailOutlined, LinkedinOutlined, FileOutlined } from '@ant-design/icons';
 import { Row, Col } from 'antd';
 import TypeIt from "typeit-react";
+import Tippy from '@tippyjs/react';
 
 export default function Header() {
     const lines = ["Biomedical Engineering at UWaterloo",

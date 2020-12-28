@@ -1,4 +1,3 @@
-import { Row, Col } from 'antd';
 import './aboutMe.css';
 
 export default function AboutMe() {
