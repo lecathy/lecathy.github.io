@@ -1,0 +1,23 @@
+.experience-container {
+    width: 100%;
+    padding: 50px;
+    background-color: #342D30;
+}
+
+.avatar {
+    position: absolute;
+    right: 0;
+}
+
+.experience-header {
+    color: white;
+    padding-top: 200px;
+    margin-left: 50px;
+}
+
+.light-underline {
+    width: 100px;
+    height: 5px;
+    background-color: #F7E1DE;
+    padding-left: 100px;
+}
