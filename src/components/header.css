@@ -41,6 +41,10 @@
     color: black;
 }
 
+.links:hover {
+    color: #00aeb5;
+}
+
 .intro-container {
     border: 2px solid black;
     font-family: 'Cormorant Garamond';
