@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import Header from './components/header';
-import AboutMe from './components/aboutMe';
-import Interests from './components/interests';
-import Experience from './components/experience';
+import Header from './components/header/header';
+import AboutMe from './components/aboutMe/aboutMe';
+import Interests from './components/interests/interests';
+import Experience from './components/experience/experience';
 
 function App() {
 

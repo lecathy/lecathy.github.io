@@ -11,7 +11,7 @@
 
 .experience-header {
     color: white;
-    padding-top: 150px;
+    padding-top: 175px;
     margin-left: 50px;
 }
 
@@ -43,4 +43,15 @@
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     margin: 75px 50px 50px 0px;
+}
+
+.experience-content {
+    margin-top: 175px;
+}
+
+.tab-title {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 12pt;
 }

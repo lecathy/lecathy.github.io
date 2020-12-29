@@ -1,14 +1,25 @@
 import React, { useState } from 'react';
-import Avatar from '../assets/me.svg';
-import '../components/experience.css';
+import Avatar from '../../assets/me.svg';
+import '../experience/experience.css';
+import {Tabs} from 'antd';
 
 export default function Experience() {
     const [view, setView] = useState('list');
+    const { TabPane } = Tabs;
 
     function renderList() {
         return(
             <div>
-                List view works!
+                <Tabs tabPosition={'left'}>
+                    <TabPane
+                        key={'1'}
+                        tab={<h4 className="tab-title">One title</h4>}>
+                    </TabPane>
+                    <TabPane
+                        key={'2'}
+                        tab={<h4 className="tab-title">Another title</h4>}>
+                    </TabPane>
+                </Tabs>
             </div>
         );
     }
@@ -44,6 +55,9 @@ export default function Experience() {
                     Carousel
                 </button>
             </span>
+            <div className="experience-content">
+                {(view === 'list') ? renderList() : renderCarousel()}
+            </div>
         </div>
     );
 }

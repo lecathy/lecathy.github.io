@@ -1,6 +1,6 @@
 import './interests.css';
-import DeskIcon from '../assets/desk.svg';
-import myInterests from '../assets/interests.svg';
+import DeskIcon from '../../assets/desk.svg';
+import myInterests from '../../assets/interests.svg';
 
 export default function Interests() {
     return (
