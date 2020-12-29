@@ -4,7 +4,7 @@ import { Row, Col } from 'antd';
 import TypeIt from "typeit-react";
 
 export default function Header() {
-    const lines = ["Biomedical Engineering at UWaterloo",
+    const lines = ["Biomedical Eng @ uWaterloo",
                     "Full Stack Dev @ RBC",
                     "SWE @ PointClickCare",
                     "Software Dev @ Cyclica",
