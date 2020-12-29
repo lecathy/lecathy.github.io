@@ -1,0 +1,31 @@
+.contact-container {
+    width: 100%;
+    background: #F2F2F2;
+    margin-top: 0;
+    padding: 50px 10px;
+}
+
+.contact-header {
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 0;
+}
+
+.contact-image {
+    display: block;
+    margin: auto;
+}
+
+.contact-icons {
+    font-size: 50px;
+    padding: 10px 20px;
+    color: black;
+}
+
+.contact-icons:hover {
+    color: #00aeb5;
+}
+
+a{
+    color: #F2F2F2;
+}

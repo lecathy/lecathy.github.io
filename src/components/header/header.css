@@ -64,12 +64,12 @@
 }
 
 .type-it {
-    font-size: 16pt;
+    font-size: 15pt;
     padding-left: 65px;
 }
 
 .pink-underline {
-    width: 250px;
+    width: 200px;
     height: 7.5px;
     background-color: #F7E1DE;
     margin-left: 64px;
@@ -80,7 +80,7 @@
     height: 500px;
     background-color: #F7E1DE;
     margin: 100px;
-    display:inline-block
+    display: inline-block
 }
 
 .border-text {
