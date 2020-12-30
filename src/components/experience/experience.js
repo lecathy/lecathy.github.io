@@ -6,18 +6,26 @@ import MyTab from '../myTab/myTab';
 
 export default function Experience() {
     const [view, setView] = useState('list');
-    const { TabPane } = Tabs;
+    const experiences = [
+        {
+            title: 'Software Developer at Cyclica',
+            date: 'Sept - Dec 2020',
+            filters: ['React', 'Django', 'Drug Development'],
+        },
+        {
+            title: 'Software Engineering at PointClickCare',
+            date: 'Jan - May 2020',
+            filters: ['Springboot', 'Selenium', 'Healthcare'],
+        }
+    ]
 
     function renderList() {
         return(
-            <div>
-                <Tabs tabPosition={'left'}>
-                    <TabPane
-                        key={'1'}
-                        tab={<MyTab title="a title" date="a date" />}
-                    />
-                </Tabs>
-            </div>
+            experiences.map(experience => {
+                return(
+                    <MyTab title={experience.title} date={experience.date} filters={experience.filters} />
+                );
+            })
         );
     }
 
@@ -31,9 +39,9 @@ export default function Experience() {
 
     return (
         <div className="experience-container">
-            <div>
+            <p>
                 <img src={Avatar} alt={'my avatar'} className="avatar"/>
-            </div>
+            </p>
             <h1 className="experience-header">Work Experience</h1>
             <div className="light-underline"/>
             <span>

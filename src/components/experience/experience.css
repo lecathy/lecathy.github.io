@@ -8,12 +8,13 @@
 .avatar {
     position: absolute;
     right: 0;
-    width: 40%;
+    text-align: right;
+    width: 35%;
 }
 
 .experience-header {
     color: white;
-    padding-top: 175px;
+    padding-top: 200px;
     margin-left: 50px;
 }
 

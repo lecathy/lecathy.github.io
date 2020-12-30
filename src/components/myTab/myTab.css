@@ -1,11 +1,44 @@
 .tab-container {
+    margin-top: 15px;
+}
+
+.tab-header {
+    background-color: #B4D5D7;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.tab-title {
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 450;
+    font-size: 15pt;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.tab-filters {
+    background-color: #EAEAEA;
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-align: right;
+    font-size: 8pt;
+    margin: 10px 5px 0px 0px;
+}
+
+.tab-content {
     background-color: white;
-    width: 20%;
-    padding: 5px;
-    border-radius: 20px;
+    width: 70%;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     outline: none;
     box-shadow: none;
     border: none;
+    margin: 0 auto;
 }
 
 .ant-tabs-tab-btn {
@@ -14,19 +47,10 @@
     border: none;
 }
 
-.tab-title {
-    color: black;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 14pt;
-    margin-bottom: 0px;
-    margin-top: 5px;
-}
-
 .tab-date {
     color: black;
     font-family: 'Montserrat';
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12pt;
     margin-top: 5px;
 }
