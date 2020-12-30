@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Avatar from '../../assets/me.svg';
 import '../experience/experience.css';
 import {Tabs} from 'antd';
+import MyTab from '../myTab/myTab';
 
 export default function Experience() {
     const [view, setView] = useState('list');
@@ -13,12 +14,8 @@ export default function Experience() {
                 <Tabs tabPosition={'left'}>
                     <TabPane
                         key={'1'}
-                        tab={<h4 className="tab-title">One title</h4>}>
-                    </TabPane>
-                    <TabPane
-                        key={'2'}
-                        tab={<h4 className="tab-title">Another title</h4>}>
-                    </TabPane>
+                        tab={<MyTab title="a title" date="a date" />}
+                    />
                 </Tabs>
             </div>
         );

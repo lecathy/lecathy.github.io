@@ -1,0 +1,32 @@
+.tab-container {
+    background-color: white;
+    width: 20%;
+    padding: 5px;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.ant-tabs-tab-btn {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.tab-title {
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14pt;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.tab-date {
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 12pt;
+    margin-top: 5px;
+}

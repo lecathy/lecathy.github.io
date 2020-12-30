@@ -2,11 +2,13 @@
     width: 100%;
     padding: 50px;
     background-color: #342D30;
+    margin-bottom: 0px;
 }
 
 .avatar {
     position: absolute;
     right: 0;
+    width: 40%;
 }
 
 .experience-header {
@@ -47,11 +49,4 @@
 
 .experience-content {
     margin-top: 175px;
-}
-
-.tab-title {
-    color: white;
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-size: 12pt;
 }

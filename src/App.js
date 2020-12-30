@@ -5,6 +5,7 @@ import AboutMe from './components/aboutMe/aboutMe';
 import Interests from './components/interests/interests';
 import Experience from './components/experience/experience';
 import ContactMe from './components/contactMe/contactMe';
+import MyFooter from './components/footer/myFooter';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Interests />
       <Experience />
       <ContactMe />
+      <MyFooter />
     </div>
   );
 }
