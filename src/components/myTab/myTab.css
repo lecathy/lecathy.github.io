@@ -1,12 +1,14 @@
 .tab-container {
     margin-top: 15px;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .tab-header {
     background-color: #B4D5D7;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    width: 70%;
+    width: 80%;
     padding: 20px;
     margin: 0 auto;
 }
@@ -14,8 +16,8 @@
 .tab-title {
     color: black;
     font-family: 'Montserrat';
-    font-weight: 450;
-    font-size: 15pt;
+    font-weight: 400;
+    font-size: 17pt;
     margin-bottom: 5px;
     margin-top: 0px;
 }
@@ -31,7 +33,7 @@
 
 .tab-content {
     background-color: white;
-    width: 70%;
+    width: 80%;
     padding: 20px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;

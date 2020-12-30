@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Avatar from '../../assets/me.svg';
 import '../experience/experience.css';
-import {Tabs} from 'antd';
 import MyTab from '../myTab/myTab';
 
 export default function Experience() {
@@ -16,14 +15,23 @@ export default function Experience() {
             title: 'Software Engineering at PointClickCare',
             date: 'Jan - May 2020',
             filters: ['Springboot', 'Selenium', 'Healthcare'],
-        }
+        },
+        {
+            title: 'Fullstack Developer at RBC',
+            date: 'May - Aug 2019',
+            filters: ['Angular', 'Springboot', 'Android', 'iOS'],
+        },
     ]
 
     function renderList() {
         return(
             experiences.map(experience => {
                 return(
-                    <MyTab title={experience.title} date={experience.date} filters={experience.filters} />
+                    <MyTab
+                        title={experience.title}
+                        date={experience.date}
+                        filters={experience.filters}
+                    />
                 );
             })
         );

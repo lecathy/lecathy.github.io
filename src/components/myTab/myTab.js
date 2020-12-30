@@ -36,10 +36,12 @@ MyTab.propTypes = {
     title: PropTypes.string,
     date: PropTypes.string,
     filters: PropTypes.array,
+    image: PropTypes.shape(),
 }
 
 MyTab.defaultProps = {
     title: '',
     date: '',
     filters: [],
+    image: '',
 }

@@ -1,6 +1,6 @@
 .experience-container {
     width: 100%;
-    padding: 50px;
+    padding: 50px 0px;
     background-color: #342D30;
     margin-bottom: 0px;
 }
@@ -15,7 +15,8 @@
 .experience-header {
     color: white;
     padding-top: 200px;
-    margin-left: 50px;
+    margin-left: 100px;
+    font-weight: 400;
 }
 
 .light-underline {
@@ -23,6 +24,7 @@
     height: 5px;
     background-color: #F7E1DE;
     padding-left: 100px;
+    margin-left: 50px;
 }
 
 .toggle-button {
@@ -39,7 +41,7 @@
 .left-button {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    margin: 75px 0px 50px 0px;
+    margin: 75px 0px 50px 50px;
 }
 
 .right-button {
