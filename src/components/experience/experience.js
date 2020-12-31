@@ -5,6 +5,7 @@ import MyTab from '../myTab/myTab';
 import CyclicaLogo from '../../assets/cyclica';
 import PointClickCareLogo from '../../assets/pointclickcare.png';
 import RBCLogo from '../../assets/rbc.png';
+import WaterlooLogo from '../../assets/waterloo.png';
 import Avatar from '../../assets/me.svg';
 
 export default function Experience() {
@@ -26,6 +27,26 @@ export default function Experience() {
                                 cells by implementing a dynamically colour coded anatomical diagram and graph',
                                 'Optimized performance of protein details API by 30% through refactoring database queries',
                         ],
+            links: [{description: 'Company Website', link: 'https://www.cyclicarx.com/'}, {description: 'Ligand Express', link: 'https://ligandexpress.com/'}]
+        },
+        {
+            title: 'Research Assistant',
+            company: 'Lab of Engineering and Optometry/Vision Science',
+            date: 'Sept 2019 - Present',
+            filters: ['Python', 'Psychophysics', 'Optics', 'Research'],
+            image: WaterlooLogo,
+            companyDescription: "I started working part time as a research assistant under Professor Vasudevan (Vengu) Lakshminarayanan. In this very \
+                                multidisciplinary lab I got to work with a huge variety of people, delve into the world of optics and research while \
+                                being able to publish my very first article! :)",
+            resumePoints: [
+                                'Cowrote a publication for SPIE Optics + Photonics journal',
+                                'Created a psychophysics eye experiment software to be used in a clinical trial by the Singapore Eye Research Institute \
+                                to predict early stage glaucoma in patients by measuring hyperacuity',
+                                'With PsychoPy/Python, developed an algorithm using the adaptive staircase procedure to adjust the next test stimulus \
+                                according to past responses and write the raw data and insights in a comprehensible format for the experiment observer',
+                        ],
+            links: [{description: 'Check out my article', link: 'http://www.spie.org/Publications/Proceedings/Paper/10.1117/12.2566771'},
+                    {description: 'Lab site', link: 'https://sites.google.com/view/teellabvengulab/home'},]
         },
         {
             title: 'Software Engineering',
@@ -43,6 +64,8 @@ export default function Experience() {
                                 increase logging coverage by 12%',
                                 'Reduced team regression period by 5 days by developing page objects and end to end tests with TestNG and Selenium',
                         ],
+            links: [{description: 'Company Website', link: 'https://pointclickcare.com/'},
+            {description: 'Info on Nutrition Management', link: 'https://pointclickcare.com/products/nutrition-management/'}]
         },
         {
             title: 'Fullstack Developer',
@@ -52,7 +75,8 @@ export default function Experience() {
             image: RBCLogo,
             companyDescription: 'RBC is one of the biggest banks in Canada and offers loads of financial services to their clients. Among these \
                                 services includes mortgages which is what my team worked on! On this team, I was helping to develop a convenient \
-                                mobile and web application that mortgage specialists could check regularly to stay on top of their deals.',
+                                mobile and web application that mortgage specialists could check regularly to stay on top of their deals. By the end \
+                                of my term, the service was fully in production across Canada!',
             resumePoints: [
                                 'Created 30% of UI features on an internal web application used by hundreds of mortgage specialists according to \
                                 strict design specifications and added dynamic functionality to widgets with Angular, Kotlin and Swift',
@@ -74,6 +98,7 @@ export default function Experience() {
                         image = {experience.image}
                         companyDescription = {experience.companyDescription}
                         resumePoints = {experience.resumePoints}
+                        links = {experience.links}
                     />
                 );
             })

@@ -72,3 +72,10 @@
 ul {
     font-weight: 300;
 }
+
+.tab-links {
+    padding: 5px;
+    color: #362CA9;
+    font-size: 11pt;
+    font-family: 'Montserrat',
+}

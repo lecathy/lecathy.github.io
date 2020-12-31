@@ -37,6 +37,23 @@ export default function MyTab(props) {
         )
     }
 
+    function renderLinks() {
+        return (
+            (props.links.length !== 0) && <div>
+            <span style={{marginLeft: '10%'}}> Links: </span>
+            {props.links.map(link => {
+                return(
+                    <span>
+                        <a href={link.link}  target="_blank" rel="noreferrer" className="tab-links">
+                            {link.description}
+                        </a> 
+                    </span>
+                );
+            })}
+            </div>
+        );
+    }
+
     return(
         <div className="tab-container">
             <div className="tab-header">
@@ -59,6 +76,7 @@ export default function MyTab(props) {
                 </p>
                 {!isCollapsed && (<div>
                     {renderResumePoints()}
+                    {renderLinks()}
                 </div>)}
                 <div>
                     {(isCollapsed)
@@ -93,6 +111,7 @@ MyTab.propTypes = {
     image: PropTypes.shape(),
     companyDescription: PropTypes.string,
     resumePoints: PropTypes.array,
+    links: PropTypes.array,
 }
 
 MyTab.defaultProps = {
@@ -103,4 +122,5 @@ MyTab.defaultProps = {
     image: '',
     companyDescription: '',
     resumePoints: [],
+    links: [],
 }
