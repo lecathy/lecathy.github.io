@@ -71,3 +71,24 @@ h1 {
     margin-left: 20%;
     margin-bottom: 75px;
 }
+
+.carousel-title {
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #748a83;
+}
+
+.carousel-filter-container {
+    margin: 0 auto;
+}
+
+.carousel-filters {
+    text-align: center;
+    background-color: #E2978E;
+    color:white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 8pt;
+    margin: 10px 5px 0px 0px;
+}

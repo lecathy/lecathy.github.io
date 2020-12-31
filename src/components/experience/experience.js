@@ -37,16 +37,33 @@ export default function Experience() {
     function renderCarousel() {
         return (
             <div>
-                <Carousel activeIndex={index} onSelect={handleSelect} className="my-carousel">
-                    <Carousel.Item className="my-carousel-card">
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Item>
-                    <Carousel.Item className="my-carousel-card">
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Item>
+                <Carousel activeIndex={index} onSelect={handleSelect} className="my-carousel" data-interval={false}>
+                    {workExperiences.map(experience => {
+                        return(
+                            <Carousel.Item className="my-carousel-card">
+                                <h3 className="carousel-title">{experience.title + " at " + experience.company} </h3>
+                                <p> {renderFilters(experience)}</p>
+                                <img src={experience.image} alt=""  maxHeight="150px" className="center"/>
+                                <div style={{margin: 0}}>
+                                    <p> {experience.companyDescription}</p>
+                                </div>
+                            </Carousel.Item>
+                        );
+                    })}
                 </Carousel>
+            </div>
+        );
+    }
+
+    function renderFilters(experience) {
+        return (
+            <div className="carousel-filter-container">
+                {experience.filters.map(filter => {
+                    return (
+                            <span className="carousel-filters">{filter}</span>
+                        );
+                    })
+                }
             </div>
         );
     }

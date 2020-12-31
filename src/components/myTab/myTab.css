@@ -79,3 +79,9 @@ ul {
     font-size: 11pt;
     font-family: 'Montserrat',
 }
+
+.center {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
