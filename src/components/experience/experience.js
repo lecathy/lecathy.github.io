@@ -11,28 +11,54 @@ export default function Experience() {
     const [view, setView] = useState('list');
     const experiences = [
         {
-            title: 'Software Developer at Cyclica',
+            title: 'Software Developer',
+            company: 'Cyclica',
             date: 'Sept - Dec 2020',
-            filters: ['React', 'Django', 'Drug Development'],
+            filters: ['React', 'Django', 'Drug Discovery'],
             image: CyclicaLogo,
             companyDescription: 'Cyclica is a Toronto based biotechnology start up that leverages AI to accelerate the drug discovery process!\
                                 As an intern on the Scientific platforms team I worked on Ligand Express, a cloud based platform in which users\
                                 could upload molecules of interest to generate polypharmacology profiles.',
-            resumePoints: '',
+            resumePoints: [
+                                'Created new features from end to end for a drug development platform by building functional React components and \
+                                leveraging Django to develop RESTful API’s and PostgreSQL query expressions',
+                                'Built a major feature that allows users to analyze the abundance of 30 000+ proteins in major organs, tissues and \
+                                cells by implementing a dynamically colour coded anatomical diagram and graph',
+                                'Optimized performance of protein details API by 30% through refactoring database queries',
+                        ],
         },
         {
-            title: 'Software Engineering at PointClickCare',
+            title: 'Software Engineering',
+            company: 'PointClickCare',
             date: 'Jan - May 2020',
             filters: ['Springboot', 'Selenium', 'Healthcare'],
             image: PointClickCareLogo,
-            companyDescription: 'Cyclica is a drug development company',
+            companyDescription: "PointClickCare is a private cloud-based software company that provides software to nurses in long-term care \
+                                facilities, serving thousands of institutions in North America. I was put on team Heroes4Hire who worked \
+                                on a microservice called Nutrition Management. This application helped facilitate meal times and helped nurses \
+                                view and order foods that fit their resident's dietary needs.",
+            resumePoints: [
+                                'Implemented and tested backend of nutrition management and core web application used by hundreds of hospitals',
+                                'Developed audit framework and instrumented logging events using RESTful API’s, jQuery, Spring and Mockito to \
+                                increase logging coverage by 12%',
+                                'Reduced team regression period by 5 days by developing page objects and end to end tests with TestNG and Selenium',
+                        ],
         },
         {
-            title: 'Fullstack Developer at RBC',
+            title: 'Fullstack Developer',
+            company: 'Royal Bank of Canada',
             date: 'May - Aug 2019',
             filters: ['Angular', 'Springboot', 'Android', 'iOS'],
             image: RBCLogo,
-            companyDescription: 'Cyclica is a drug development company',
+            companyDescription: 'RBC is one of the biggest banks in Canada and offers loads of financial services to their clients. Among these \
+                                services includes mortgages which is what my team worked on! On this team, I was helping to develop a convenient \
+                                mobile and web application that mortgage specialists could check regularly to stay on top of their deals.',
+            resumePoints: [
+                                'Created 30% of UI features on an internal web application used by hundreds of mortgage specialists according to \
+                                strict design specifications and added dynamic functionality to widgets with Angular, Kotlin and Swift',
+                                'Using Spring, developed API’s, wrote and retrieved all user preferences with MongoDB and implemented business logic',
+                                'Presented new features and project updates to over 100 stakeholders biweekly',
+                        ],
         },
     ]
 
@@ -42,10 +68,12 @@ export default function Experience() {
                 return(
                     <MyTab
                         title={experience.title}
+                        company={experience.company}
                         date={experience.date}
                         filters={experience.filters}
                         image = {experience.image}
                         companyDescription = {experience.companyDescription}
+                        resumePoints = {experience.resumePoints}
                     />
                 );
             })

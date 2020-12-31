@@ -57,7 +57,7 @@
 
 .tab {
     margin: 0;
-    padding: 25px 10% 0px 10%;
+    padding: 25px 10% 10px 10%;
     font-size: 11pt;
 }
 
@@ -67,4 +67,8 @@
     cursor: pointer;
     font-weight: 500;
     font-size: 10pt;
+}
+
+ul {
+    font-weight: 300;
 }

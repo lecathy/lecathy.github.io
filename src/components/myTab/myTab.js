@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 export default function MyTab(props) {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
-    function renderFilters(){
+    function renderFilters() {
         return (
             props.filters.map(filter => {
                 return (
@@ -15,13 +15,35 @@ export default function MyTab(props) {
         );
     }
 
+    function renderResumePoints() {
+        return(
+            <div>
+                <b
+                    className="tab"
+                    style={{padding: '10%', color: '#748a83'}}
+                > 
+                    {'Here is what I did at ' + props.company + ':'}
+                </b>
+                <ul>
+                    {
+                        props.resumePoints.map(point => {
+                            return (
+                                <li style={{marginLeft: '10%', marginRight: '10%'}}>{point}</li>
+                            );
+                        })
+                     }
+                </ul>
+            </div>
+        )
+    }
+
     return(
         <div className="tab-container">
             <div className="tab-header">
                 <h4
                     className="tab-title"
                 > 
-                    {props.title}
+                    {props.title + ' at ' + props.company}
                 </h4>
                 <span>
                     { renderFilters() }
@@ -35,6 +57,9 @@ export default function MyTab(props) {
                 <p className="tab">
                     {props.companyDescription}
                 </p>
+                {!isCollapsed && (<div>
+                    {renderResumePoints()}
+                </div>)}
                 <div>
                     {(isCollapsed)
                         ? (
@@ -42,7 +67,7 @@ export default function MyTab(props) {
                             className="expand-collapse-label"
                             onClick={() => setIsCollapsed(!isCollapsed)}
                         >
-                            EXPAND
+                            EXPAND ▼
                         </p>
                         )
                         : (
@@ -50,7 +75,7 @@ export default function MyTab(props) {
                             className="expand-collapse-label"
                             onClick={() => setIsCollapsed(!isCollapsed)}
                         >
-                            COLLAPSE
+                            COLLAPSE ▲
                         </p>)
                     }
                 </div>
@@ -62,6 +87,7 @@ export default function MyTab(props) {
 
 MyTab.propTypes = {
     title: PropTypes.string,
+    company: PropTypes.string,
     date: PropTypes.string,
     filters: PropTypes.array,
     image: PropTypes.shape(),
@@ -71,6 +97,7 @@ MyTab.propTypes = {
 
 MyTab.defaultProps = {
     title: '',
+    company: '',
     date: '',
     filters: [],
     image: '',
