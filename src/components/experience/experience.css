@@ -20,7 +20,7 @@
 }
 
 .light-underline {
-    width: 100px;
+    width: 150px;
     height: 5px;
     background-color: #F7E1DE;
     padding-left: 100px;
@@ -52,4 +52,22 @@
 
 .experience-content {
     margin-top: 175px;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.my-carousel {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.my-carousel-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 75px;
 }
