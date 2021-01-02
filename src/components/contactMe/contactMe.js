@@ -4,7 +4,7 @@ import { GithubOutlined, MailOutlined, LinkedinOutlined, FileOutlined } from '@a
 
 export default function ContactMe() {
     return(
-        <div className="contact-container">
+        <div className="contact-container" id="contact">
             <h1 className="contact-header">Let's get in touch!</h1>
             <img src={Contact} alt={'Contact me'} className="contact-image"/>
             <span style={{display:'table', margin:'0 auto'}}>

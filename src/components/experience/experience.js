@@ -111,7 +111,7 @@ export default function Experience() {
     }
 
     return (
-        <div className="experience-container">
+        <div className="experience-container" id='experience'>
             <p>
                 <img src={Avatar} alt={'my avatar'} className="avatar"/>
             </p>
