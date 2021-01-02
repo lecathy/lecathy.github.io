@@ -44,8 +44,10 @@ export default function Experience() {
                                 <h3 className="carousel-title">{experience.title + " at " + experience.company} </h3>
                                 <p> {renderFilters(experience)}</p>
                                 <img src={experience.image} alt=""  maxHeight="150px" className="center"/>
-                                <div style={{margin: 0}}>
-                                    <p> {experience.companyDescription}</p>
+                                <div>
+                                    <p style={{ padding: 0, marginBottom: '15px' }} className="tab"> {experience.companyDescription}</p>
+                                    <p style={{ padding: 0, margin: 0 }} className="tab"> {renderResumePoints(experience)} </p>
+                                    <p style={{ padding: 0, margin: 0 }} className="tab"> {renderLinks(experience)} </p>
                                 </div>
                             </Carousel.Item>
                         );
@@ -64,6 +66,46 @@ export default function Experience() {
                         );
                     })
                 }
+            </div>
+        );
+    }
+
+    function renderResumePoints(experience) {
+        return(
+            <div>
+                <b
+                    className="tab"
+                    style={{padding: '10%', color: '#748a83'}}
+                > 
+                    {'Here is what I did at ' + experience.company + ':'}
+                </b>
+                <ul>
+                    {
+                        experience.resumePoints.map(point => {
+                            return (
+                                <li style={{marginLeft: '10%', marginRight: '10%'}}>{point}</li>
+                            );
+                        })
+                     }
+                </ul>
+            </div>
+        )
+    }
+
+    function renderLinks(experience) {
+        console.log(experience);
+        return (
+            (experience.links.length !== 0) && <div>
+            <span style={{marginLeft: '10%'}}> Links: </span>
+            {experience.links.map(link => {
+                return(
+                    <span>
+                        <a href={link.link}  target="_blank" rel="noreferrer" className="tab-links">
+                            {link.description}
+                        </a> 
+                    </span>
+                );
+            })}
             </div>
         );
     }

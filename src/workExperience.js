@@ -24,7 +24,7 @@ export const workExperiences= [
         },
         {
             title: 'Research Assistant',
-            company: 'Lab of Engineering and Optometry/Vision Science',
+            company: 'Lab of Engineering and Optometry',
             date: 'Sept 2019 - Present',
             filters: ['Python', 'Psychophysics', 'Optics', 'Research'],
             image: WaterlooLogo,
@@ -76,5 +76,6 @@ export const workExperiences= [
                                 'Using Spring, developed API’s, wrote and retrieved all user preferences with MongoDB and implemented business logic',
                                 'Presented new features and project updates to over 100 stakeholders biweekly',
                         ],
+            links: [],
         },
     ];
