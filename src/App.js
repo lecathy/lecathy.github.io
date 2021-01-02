@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
+import NavBar from './components/navBar/navBar';
 import Header from './components/header/header';
 import AboutMe from './components/aboutMe/aboutMe';
 import Interests from './components/interests/interests';
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div>
+      <NavBar />
       <Header />
       <AboutMe />
       <Interests />
