@@ -59,7 +59,7 @@ export default function Experience() {
 
     function renderFilters(experience) {
         return (
-            <div className="carousel-filter-container">
+            <div className="carousel-filter-container" style={{display:'table', margin:'0 auto'}}>
                 {experience.filters.map(filter => {
                     return (
                             <span className="carousel-filters">{filter}</span>
