@@ -2,6 +2,7 @@ import './header.css';
 import { GithubOutlined, MailOutlined, LinkedinOutlined, FileOutlined } from '@ant-design/icons';
 import { Row, Col } from 'antd';
 import TypeIt from "typeit-react";
+import LightBulb from '../../assets/intro-me.jpg';
 
 export default function Header() {
     const lines = ["Biomedical Eng @ uWaterloo",
@@ -24,7 +25,9 @@ export default function Header() {
             </span>
             <Row>
                 <Col span={2}>
-                    <span className="image-template">insert picture here</span>
+                    <span>
+                        <img src={LightBulb} alt={'Lightbulb'} className="image-template" />
+                    </span>
                 </Col>
                 <Col span={2} className="intro-container">
                     <span className="border-text">  Thanks for stopping by! </span>

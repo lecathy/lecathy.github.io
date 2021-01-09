@@ -62,7 +62,7 @@
     margin-top: 175px;
     margin-left: 15px;
     left: 50%;
-    top: 200px;
+    top: 250px;
     position: absolute;
 }
 
@@ -84,8 +84,7 @@
 }
 
 .image-template {
-    width: 30%;
-    height: 500px;
+    width: 25%;
     background-color: #F7E1DE;
     margin: 100px;
     display: inline-block
