@@ -5,7 +5,7 @@ export default function MyFooter() {
         <div className="footer-container">
             <hr />
             <p className="footer-note">
-                Made by me with heart! ♥
+                Made by Cathy Le with ♥ using React | 2021
             </p>
         </div>
     );
