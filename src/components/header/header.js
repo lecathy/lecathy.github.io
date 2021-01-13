@@ -18,7 +18,7 @@ export default function Header() {
             </span>
             <div className="name-underline" />
             <span>
-                <span> <a href="https://www.google.ca"> <FileOutlined className="links"/> </a></span>
+                <span> <a href="https://drive.google.com/file/d/1l8pYFDaJLWp29TMFxE50_PKYbVcsTWVy/view?usp=sharing"> <FileOutlined className="links"/> </a></span>
                 <span> <a href="https://www.linkedin.com/in/le-cathy/" target="_blank" rel="noreferrer"> <LinkedinOutlined className="links"/> </a></span>
                 <span> <a href="https://www.github.com/lecathy" target="_blank" rel="noreferrer"> <GithubOutlined className="links"/> </a> </span>
                 <span> <a href="mailto:c29le@uwaterloo.ca" rel="noreferrer"> <MailOutlined className="links"/> </a> </span>
