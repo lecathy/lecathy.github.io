@@ -2,15 +2,35 @@ import CyclicaLogo from '../src/assets/cyclica';
 import PointClickCareLogo from '../src/assets/pointclickcare.png';
 import RBCLogo from '../src/assets/rbc.png';
 import WaterlooLogo from '../src/assets/waterloo.png';
+import DNAstackLogo from '../src/assets/dnastack.png';
 
-export const workExperiences= [
+export const workExperiences = [
+        {
+            title: 'Software Engineer',
+            company: 'DNAstack',
+            date: 'May - Aug 2021',
+            filters: ['Spring', 'Data Sharing', 'Caching'],
+            image: DNAstackLogo,
+            companyDescription: 'DNAstack is a startup in Toronto that leverages software and data science to accelerate breakthroughs \
+                                 in genetic research and precision medicine. I lucked out and joined the company while they were ramping up to a major release! \
+                                 They were releasing Publisher and Explorer, sister software products that work together to ease the process of congregating, \
+                                 sharing, and searching genetics data. As a member on the data lake team, I worked on some pretty cool and high impact features \
+                                 for Publisher!',
+            resumePoints: [
+                                'Developed Java Spring services that allow users to combine and share genomics data with access policies from various data sources (SQL, Azure, PostgreSQL, BigQuery) as collections',
+                                'Decreased response time of access control operations by 95% by creating and managing a PostgreSQL cache',
+                                'Implemented a job queue manager to facilitate time consuming operations and notify user of job statuses in the UI',
+                                'Paginated API endpoint response bodies to decrease webpage rendering time by 60%',
+            ],
+            links: [{description: 'Company Website', link: 'https://dnastack.com/'}, {description: 'Publisher Docs', link: 'https://docs.beta.dnastack.com/publisher/'}],
+        },
         {
             title: 'Software Developer',
             company: 'Cyclica',
             date: 'Sept - Dec 2020',
             filters: ['React', 'Django', 'Drug Discovery'],
             image: CyclicaLogo,
-            companyDescription: 'Cyclica is a Toronto based biotechnology start up that leverages AI to accelerate the drug discovery process!\
+            companyDescription: 'Cyclica is a Toronto based biotechnology startup that leverages AI to accelerate the drug discovery process!\
                                 As an intern on the Scientific platforms team I worked on Ligand Express, a cloud based platform in which users\
                                 could upload molecules of interest to generate polypharmacology profiles.',
             resumePoints: [
