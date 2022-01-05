@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.bc1c08ad.chunk.css",
-    "main.js": "/static/js/main.7fd3b476.chunk.js",
-    "main.js.map": "/static/js/main.7fd3b476.chunk.js.map",
+    "main.js": "/static/js/main.95ab6e4a.chunk.js",
+    "main.js.map": "/static/js/main.95ab6e4a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c10713e2.js",
     "runtime-main.js.map": "/static/js/runtime-main.c10713e2.js.map",
     "static/css/2.c4cf4e3b.chunk.css": "/static/css/2.c4cf4e3b.chunk.css",
@@ -21,6 +21,7 @@
     "static/media/interests.6e416f9b.svg": "/static/media/interests.6e416f9b.svg",
     "static/media/intro-me.689c798e.jpg": "/static/media/intro-me.689c798e.jpg",
     "static/media/me.5d96be15.svg": "/static/media/me.5d96be15.svg",
+    "static/media/meta.4ae582fd.png": "/static/media/meta.4ae582fd.png",
     "static/media/index.css": "/static/media/montserrat-latin-900italic.efcaa0f6.woff",
     "static/media/rbc.d0eff3ef.png": "/static/media/rbc.d0eff3ef.png",
     "static/media/waterloo.54358e66.png": "/static/media/waterloo.54358e66.png"
@@ -30,6 +31,6 @@
     "static/css/2.c4cf4e3b.chunk.css",
     "static/js/2.472f11d2.chunk.js",
     "static/css/main.bc1c08ad.chunk.css",
-    "static/js/main.7fd3b476.chunk.js"
+    "static/js/main.95ab6e4a.chunk.js"
   ]
 }
