@@ -3,8 +3,22 @@ import PointClickCareLogo from '../src/assets/pointclickcare.png';
 import RBCLogo from '../src/assets/rbc.png';
 import WaterlooLogo from '../src/assets/waterloo.png';
 import DNAstackLogo from '../src/assets/dnastack.png';
+import MetaLogo from '../src/assets/meta.png';
 
 export const workExperiences = [
+        {
+            title: 'Software Engineer',
+            company: 'Meta (previously Facebook)',
+            date: 'Jan - April 2022',
+            filters: ['Incoming'],
+            image: MetaLogo,
+            companyDescription: 'Super excited to be joining Meta/Facebook this winter on the Community Presence Team. Working to empower users to build \
+                                community on Facebook!',
+            resumePoints: [
+                                'Project TBD'
+            ],
+            links: [],
+        },
         {
             title: 'Software Engineer',
             company: 'DNAstack',

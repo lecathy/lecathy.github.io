@@ -6,9 +6,11 @@ import LightBulb from '../../assets/intro-me.jpg';
 
 export default function Header() {
     const lines = ["Biomedical Eng @ uWaterloo",
-                    "Full Stack Dev @ RBC",
-                    "SWE @ PointClickCare",
-                    "Software Dev @ Cyclica",
+                    "Software Engineer at Meta",
+                    "Prev SWE at DNAstack",
+                    "Prev Software Dev at Cyclica",
+                    "Prev SWE at PointClickCare",
+                    "Prev Full Stack Dev at RBC",
                     "Online Shopping Enthusiast"
                 ];
     return(
@@ -18,7 +20,7 @@ export default function Header() {
             </span>
             <div className="name-underline" />
             <span>
-                <span> <a href="https://drive.google.com/file/d/1t9guecUR_hRhpQMgCHPB42-elI_38ai2/view?usp=sharing"> <FileOutlined className="links"/> </a></span>
+                <span> <a href="https://drive.google.com/file/d/1hpTntIAPPcuD-7Rn5K9NVHxVKsuYNc_s/view?usp=sharing"> <FileOutlined className="links"/> </a></span>
                 <span> <a href="https://www.linkedin.com/in/le-cathy/" target="_blank" rel="noreferrer"> <LinkedinOutlined className="links"/> </a></span>
                 <span> <a href="https://www.github.com/lecathy" target="_blank" rel="noreferrer"> <GithubOutlined className="links"/> </a> </span>
                 <span> <a href="mailto:c29le@uwaterloo.ca" rel="noreferrer"> <MailOutlined className="links"/> </a> </span>

@@ -5,8 +5,8 @@ export default function AboutMe() {
         <div className="about-me-container" id="aboutMe">
             <h1>About Me</h1>
             <p>
-                Hiiiiiiiii there! Thank you so much for checking this out! I'm Cathy and I'm a third year biomedical engineering student at the University of Waterloo.
-                I am passionate about developing and designing innovative software products for social good and am super eager for the future! I have a lot of experience with 
+                Helloooooo! Thank you so much for checking this out! I'm Cathy and I'm a 4a biomedical engineering student at the University of Waterloo.
+                I am passionate about developing and designing innovative software products for social good! I have a lot of experience with 
                 web development and design and would love to apply these skills to any exciting project!
             </p>
             <p>
@@ -14,14 +14,15 @@ export default function AboutMe() {
                 using&nbsp;
                 <u><a href="http://www.vectr.com" target="_blank" rel="noreferrer" style={{color: 'blue'}}>Vectr</a></u>!
                 I have also been playing piano since I was 5 and casually picked up guitar, uke and saxophone over the years.
+                I also enjoy baking, cooking, Pokemon, Animal Crossing and online shopping.
             </p>
             <p>
-                At the end of 2020, I finished up an amazing co-op term with Cyclica where I was given loads of mentorship and opportunities!
-                I'll be going back to school for a term and am&nbsp;<b style={{ fontWeight: 600 }}>currently seeking co-op opportunities for Summer 2021!</b>
+                At the end of 2021, I finished up my 3b term. I've done 4 amazing coops so far (more details below :)) where I was given loads of mentorship and opportunities!
+                I'll be joining Meta as a SWE intern in January 2022 and am&nbsp;<b style={{ fontWeight: 600 }}>currently seeking co-op opportunities for Summer 2022!</b>
             </p>
             <p></p>
             <i style={{textAlign: 'center'}}>
-                Feel free to reach out to me for a chat!
+                Feel free to reach out to me! Cheers :)
             </i>
         </div>
     );

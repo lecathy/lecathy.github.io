@@ -8,7 +8,7 @@ export default function ContactMe() {
             <h1 className="contact-header">Let's get in touch!</h1>
             <img src={Contact} alt={'Contact me'} className="contact-image"/>
             <span style={{display:'table', margin:'0 auto'}}>
-                <span> <a href="https://drive.google.com/file/d/1t9guecUR_hRhpQMgCHPB42-elI_38ai2/view?usp=sharing"> <FileOutlined className="contact-icons"/> </a></span>
+                <span> <a href="https://drive.google.com/file/d/1hpTntIAPPcuD-7Rn5K9NVHxVKsuYNc_s/view?usp=sharing"> <FileOutlined className="contact-icons"/> </a></span>
                 <span> <a href="https://www.linkedin.com/in/le-cathy/" target="_blank" rel="noreferrer"> <LinkedinOutlined className="contact-icons"/> </a></span>
                 <span> <a href="https://www.github.com/lecathy" target="_blank" rel="noreferrer"> <GithubOutlined className="contact-icons"/> </a> </span>
                 <span> <a href="mailto:c29le@uwaterloo.ca" rel="noreferrer"> <MailOutlined className="contact-icons"/> </a> </span>
